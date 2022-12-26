@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: black;
+    --calcy-bg: #212121;
+    --input-bg: rgb(219, 152, 28);
+    --numbtn-bg: rgb(51, 51, 51);
+    --eval-bg: rgb(202, 192, 192);
+}
+
+body {
+    background-color: var(--body-bg);
+    width: 10px;
+}
+
+::placeholder {
+    color: aliceblue;
+}
+
+table {
+    background-color: var(--calcy-bg);
+    margin: 200px auto 0 auto;
+    padding: 6px;
+    border: none;
+    border-radius: 25px;
+}
+
+#input {
+    width: 320px;
+    background-color: var(--input-bg);
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-right: 15px;
+    font-size: 40px;
+    text-align: right;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.btn {
+    padding: 1ren;
+    border: none;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--calcy-bg);
+    box-shadow: 2px 2px #605c5c;
+}
+
+.btn:hover {
+    opacity: calc(65%)
+}
+
+tr {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+td {
+    margin: 0.5rem;
+}
+
+.numbtn {
+    background-color: var(--numbtn-bg);
+}
+
+.symbols {
+    background-color: var(--input-bg);
+    box-shadow: 2px 2px #1d1c1c;
+}
+
+.eval {
+    background-color: var(--eval-bg);
+    color: #212121;
+    box-shadow: 2px 2px #2b2a2a;
+}
